@@ -1,15 +1,15 @@
 (function ($) {
-    $('#citiesTable').DataTable( {
-        "ajax": "http://localhost:9080/api/v1/cities",
+    $('#accountsTable').DataTable( {
+        "ajax": "http://localhost:9080/api/v1/accounts",
         "columns": [
             { "data": "id" },
-            { "data": "fldName" },
-            { "data": "fldLat" },
-            { "data": "fldLong" },
-            { "data": "fldCountry" },
-            { "data": "fldAbbreviation" },
-            { "data": "fldCapitalStatus" },
-            { "data": "fldPopulation" }
+            { "data": "first_name" },
+            { "data": "last_name" },
+            { "data": "balance" },
+            { "data": "email" },
+            { "data": "password" },
+            { "data": "gender" },
+            { "data": "accountID" }
 
         ]
     } );

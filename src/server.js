@@ -7,14 +7,14 @@ app.use(express.static('docs'));
 open("http://localhost:9080");
 
 
-app.get('/api/v1/cities', function(req, res) {
+app.get('/api/v1/accounts', function(req, res) {
     const mysql = require('mysql')
     const connection = mysql.createConnection({
         host: 'localhost',
         port: '32000',
         user: 'root',
         password: 'root',
-        database: 'citiesData'
+        database: 'accountsData'
     });
     connection.connect();
 
